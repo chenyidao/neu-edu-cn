@@ -1,0 +1,116 @@
+## 1、标题
+# 一级标题
+## 二级标题
+### 三级标题
+#### 四级标题
+##### 五级标题
+###### 六级标题
+<br>
+
+
+## 2、 快捷键
+
+撤销：<kbd>Ctrl/Command</kbd> + <kbd>Z</kbd>
+重做：<kbd>Ctrl/Command</kbd> + <kbd>Y</kbd>
+加粗：<kbd>Ctrl/Command</kbd> + <kbd>B</kbd>
+斜体：<kbd>Ctrl/Command</kbd> + <kbd>I</kbd>
+标题：<kbd>Ctrl/Command</kbd> + <kbd>Shift</kbd> + <kbd>H</kbd>
+无序列表：<kbd>Ctrl/Command</kbd> + <kbd>Shift</kbd> + <kbd>U</kbd>
+有序列表：<kbd>Ctrl/Command</kbd> + <kbd>Shift</kbd> + <kbd>O</kbd>
+检查列表：<kbd>Ctrl/Command</kbd> + <kbd>Shift</kbd> + <kbd>C</kbd>
+插入代码：<kbd>Ctrl/Command</kbd> + <kbd>Shift</kbd> + <kbd>K</kbd>
+插入链接：<kbd>Ctrl/Command</kbd> + <kbd>Shift</kbd> + <kbd>L</kbd>
+插入图片：<kbd>Ctrl/Command</kbd> + <kbd>Shift</kbd> + <kbd>G</kbd>
+<br>
+
+## 3、文本格式
+*斜体*
+**加粗**
+==标记文本==
+~~删除文本~~
+H~2~O 是液体
+2^10^
+<br>
+## 4、插入链接与图片
+带尺寸的图片: ![Alt](https://avatar.csdn.net/7/7/B/1_ralf_hx163com.jpg =30x30)
+当然，我们为了让用户更加便捷，我们增加了图片拖拽功能。
+<br>
+## 5、表格
+一个简单的表格是这么创建的：
+|:----|:----|      对齐方式 ':'
+即:朝向=对齐方向 
+项目     | Value
+-------- | -----
+电脑  | $1600
+手机  | $12
+导管  | $1
+---
+你是   |哪个  
+|:-------|:-----:|
+ 好吗 |很好呀  
+<br>
+
+## 6、注释也是必不可少的
+
+Markdown将文本转换为 HTML。
+
+*[HTML]: 超文本标记语言
+<br>
+
+## 7、 KaTeX数学公式
+您可以使用渲染LaTeX数学表达式 KaTeX:
+
+Gamma公式展示 $\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$ 是通过欧拉积分
+
+$$ \Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt,. $$
+<br>
+## 8、 新的甘特图功能，丰富你的文章
+
+```mermaid
+gantt
+        dateFormat  YYYY-MM-DD
+        title Adding GANTT diagram functionality to mermaid
+        section 现有任务
+        已完成               :done,    des1, 2014-01-06,2014-01-08
+        进行中               :active,  des2, 2014-01-09, 3d
+        计划一               :         des3, after des2, 5d
+        计划二               :         des4, after des3, 5d
+```
+<br><br>
+## 9、 流程图
+
+```mermaid
+flowchat
+st=>start: 开始
+e=>end: 结束
+op=>operation: 我的操作
+cond=>condition: 确认？
+
+st->op->cond
+cond(yes)->e
+cond(no)->op
+```
+<br><br>
+## 10、UML 图表
+
+可以使用UML图表进行渲染。 Mermaid. 例如下面产生的一个序列图：
+```mermaid
+sequenceDiagram
+张三 ->> 李四: 你好！李四, 最近怎么样?
+李四-->>王五: 你最近怎么样，王五？
+李四--x 张三: 我很好，谢谢!
+李四-x 王五: 我很好，谢谢!
+Note right of 王五: 李四想了很长时间, 文字太长了<br/>不适合放在一行.
+李四-->>张三: 打量着王五...
+张三->>王五: 很好... 王五, 你怎么样?
+```
+
+```mermaid
+graph LR
+A[长方形] -- 链接 --> B((圆))
+A --> C(圆角长方形)
+B --> D{菱形}
+C --> D
+```
+
+
